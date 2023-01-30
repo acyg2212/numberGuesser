@@ -5,10 +5,10 @@ function StartGameScreen() {
     return <View style={styles.inputContainer}>
         <TextInput maxLength={2} keyboardType='number-pad' autoCorrect={false} autoCapitalize='none' style={styles.numberInput} />
         <View style={styles.buttonsContainer}>
-            <View>
+            <View style={styles.buttonContainer}>
                 <PrimaryButton>Reset</PrimaryButton>
             </View>
-            <View>
+            <View style={styles.buttonContainer}>
                 <PrimaryButton>Confirm</PrimaryButton>
             </View>
         </View>
@@ -45,5 +45,8 @@ const styles = StyleSheet.create({
     },
     buttonsContainer: {
         flexDirection: 'row'
+    },
+    buttonContainer: {
+        flex: 1,
     }
 })
